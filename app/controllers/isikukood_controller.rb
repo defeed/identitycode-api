@@ -2,7 +2,7 @@ class IsikukoodController < ApplicationController
   require 'identity_code'
 
   def index
-    render nothing: true
+    head :ok
   end
 
   def generate
