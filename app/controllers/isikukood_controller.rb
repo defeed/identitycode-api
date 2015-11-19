@@ -36,7 +36,7 @@ class IsikukoodController < ApplicationController
     identity_code = IdentityCode::Isikukood.new(code)
 
     render json: {
-      identityCodecode: code,
+      identityCode: code,
       isValid: identity_code.valid?,
       sex: identity_code.sex,
       birthDate: identity_code.birth_date,
