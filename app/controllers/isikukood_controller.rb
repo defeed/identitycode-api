@@ -8,6 +8,7 @@ class IsikukoodController < ApplicationController
   def generate
     opts = {}
     count = params[:count].to_i <= 0 ? 10 : params[:count].to_i
+    count = 1000 if count > 1000
     opts[:sex] = params[:sex].upcase if params[:sex]
     opts[:year] = params[:year].to_i if params[:year]
     opts[:month] = params[:month].to_i if params[:month]

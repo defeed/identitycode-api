@@ -54,7 +54,7 @@ $ curl 'http://localhost:3000/isikukood/generate'
 ```
 
 Accepts params:
-* `count` (optional): number of codes to generate, default is `10`
+* `count` (optional): number of codes to generate, default is 10, minimum is 1, maximum is 1000
 * `sex` (optional): either `M` or `F`, default is random
 * `safe_age` (optional): either `true` or `false`, default is `true`, meaning that generated codes will belong to people 19..50 years old. If `true`, then `year` param will be ignored
 * `year` (optional): year of birth, default is random
