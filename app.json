@@ -1,6 +1,6 @@
 {
   "name": "Identity Code as a Service",
-  "description": "Generates Estonia identity codes",
+  "description": "Generator/validator of Estonian identity codes",
   "website": "http://identityco.de",
   "repository": "https://github.com/defeed/identitycode-api",
   "keywords": [
