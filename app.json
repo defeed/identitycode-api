@@ -1,0 +1,22 @@
+{
+  "name": "Identity Code as a Service",
+  "description": "Generates Estonia identity codes",
+  "website": "http://identityco.de",
+  "repository": "https://github.com/defeed/identitycode-api",
+  "keywords": [
+    "estonia",
+    "identity code",
+    "isikukood"
+  ],
+  "env": {
+    "SECRET_KEY_BASE": {
+      "description": "A secret key base for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-ruby"
+    }
+  ]
+}
